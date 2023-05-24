@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Cheatsheet</title>
+    <link rel="stylesheet" href="./resources/css/index.css">
+</head>
+<body>
+    <div>
+        <h1>HTML and CSS Styling Reference Sheet</h1>
+    </div>
+
+    <nav id="navigation">
+        <h3>Table of contents.</h3>
+        <ul>
+            <li>HTML</li>
+                <ol>
+                    <li><a href="#Common">Common HTML Tags</a></li>
+                    <li><a href="#Linking">HTML and Linking</a></li>
+                    <li><a href="#Attributes">Attributes</a></li>
+                    <li><a href="#Table">Table Tags</a></li>
+                    <li><a href="#Semantic">Semantic HTML</a></li>
+                </ol>
+            <li>CSS</li>
+                <ol>
+                    <li><a href="#Code">Starting a New Visual Studio Project</a></li>
+                    <li><a href="#Ruleset">CSS Ruleset</a></li>
+                    <li><a href="#Selector">Selectors</a></li>
+                    <li><a href="#Styling">Visual Styling Rules</a></li>
+                    <li><a href="#Web-Fonts">Web Fonts</a></li>
+                    <li><a href="#Colors">Color Formating</a></li>
+                </ol>
+            <li>Box Models</li>
+                <ol>
+                    <li><a href="#Box">The Box Model</a></li>
+                    <li><a href="#Content-Box">Content-Box</a></li>
+                </ol>
+            <li>Command Line</li>
+                <ol>
+                    <li><a href="#Command">Command Line</a></li>
+                </ol>
+        </ul>
+    </nav>
+<br>
+
+    <div>
+        <h2 id="Common">Common HTML Tags</h2>
+        <p><strong>Structures website content.</strong></p>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;h1-6&gt;</td>
+                    <td>Heading</td>
+                    <td>Emphasizes text from 1-6, 1 being largest. Used for heading the beginning of information</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Paragraph</td>
+                    <td>Most common for larger chunck of text</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Anchor</td>
+                    <td>Used to specify the text that is the "anchor" for a link. Used in conjunction with "href" and "target" attribute.</td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Division</td>
+                    <td>A division in a section in a HTML document. Can be styled by using the "id" or "class" attribute.</td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt;</td>
+                    <td>Span</td>
+                    <td>Target a piece of content that is in-line with others. Can be styled by using the "id" or "class" attribute.</td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Emphasize</td>
+                    <td>Places text in italic</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Strong</td>
+                    <td>Places text in bold.</td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Break</td>
+                    <td><strong>No closing br needed.</strong> Places a line break.</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Unordered List</td>
+                    <td>Creates a list in no order using bullet points.</td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;</td>
+                    <td>List Item</td>
+                    <td>Places the item in the list</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Ordered List</td>
+                    <td>Creates a numbered list</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Image</td>
+                    <td><strong>Self Closing at the end "/>".</strong> Adds a image. Uses "src" attribute to link the image and "alt" for description.</td>
+                </tr>
+                <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>Video</td>
+                    <td>Adds a video. Uses the "src" attribute to link the video</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<br>
+
+    <div>
+        <h2 id="Linking">HTML and Linking</h2>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                    <td>N/A</td>
+                    <td>Placed in the first line of HTML. Lets the web browser know we are using HTML</td>
+                </tr>
+                <tr>
+                    <td>&lt;HTML&gt;</td>
+                    <td>HTML:5</td>
+                    <td>Creates a HTML Structure version 5</td>
+                </tr>
+                <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>Link</td>
+                    <td>Links HTML to CSS. Needs the "rel" and "href" attribute. Placed within the head of the HTML file. <strong>Self Closing.</strong></td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Head</td>
+                    <td>Placed inside the 'HTML:5'. Contains the metadata for a webpage. Info about the page itself.</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Title</td>
+                    <td>Placed inside the 'Head'. Gives the browser tab a title.</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Anchor</td>
+                    <td>Used to specify the text that is the "anchor" for a link. Used in conjunction with "href" and "target" attribute.</td>
+                </tr>
+                <tr>
+                    <td>Linking to same page</td>
+                    <td></td>
+                    <td>Give the target a "id". When you want to have a link/anchor go to that spot use "#(id name)" to go. Useful when applying a navigation tool. </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<br>
+
+    <div>
+        <h2 id="Attributes">Attributes</h2>
+        <p><strong>Provides additional information about an element.</strong></p>
+            <table>
+                <thead scope="col">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                    <td>href=""</td>
+                    <td>URL</td>
+                    <td>Specifies the URL of the page the link goes to. Goes inside the opening anchor, before the first ">".</td>
+                </tr>
+                <tr>
+                    <td>target=</td>
+                    <td>Target</td>
+                    <td>Specifies where to open the linked document. "_blank" is new tab. Goes after the href.</td>
+                </tr>
+                <tr>
+                    <td>&lt;alt&gt;</td>
+                    <td>Alternative</td>
+                    <td>Alternative text description for image. Used in conjction with "img"</td>
+                </tr>
+                <tr>
+                    <td>src=""</td>
+                    <td>Source</td>
+                    <td>Specifies the URL of the audio file. Used in "audio" element.</td>
+                </tr> 
+                <tr>
+                    <td>type=""</td>
+                    <td>Type</td>
+                    <td>Lets the browser know what type of audio. Used in the "audio" element.</td>
+                </tr>
+                <tr>
+                    <td>controls</td>
+                    <td>Controls</td>
+                    <td>Adds the play/pause, volume, and fullscreen to player. Used in the "video" element.</td>
+                </tr>
+                <tr>
+                    <td>&lt;autoplay&gt;</td>
+                    <td>Autoplay</td>
+                    <td>Video automatically plaing once page is loaded. Used in the "video" element.</td>
+                </tr>
+                <tr>
+                    <td>&lt;loop&gt;</td>
+                    <td>Loop</td>
+                    <td>Video will continuously play. Used in the "video" element.</td>
+                </tr>
+                <tr>
+                    <td>rel=""</td>
+                    <td>Stylesheet</td>
+                    <td>Describes the relationship between HTML and CSS. Since linking to stylesheet, value will be "stylesheet".</td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
+
+<br>
+
+    <div>
+        <h2 id="Table">Table Tags</h2>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Table</td>
+                    <td>Creates a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Table Header</td>
+                    <td>Only the colum headings marked by "scope="col"". Has to have its own "tr" to store headers</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Table Head</td>
+                    <td>Creates the header for the table.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Table Body</td>
+                    <td>Holds all the table data.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Table Row</td>
+                    <td>Adds a row to the table</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Table Data</td>
+                    <td>Creates a column with the data.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Table Footer</td>
+                    <td>Contains the total fo teh data table, sums, differences, and other data results.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<br>
+
+    <div>
+        <h2 id="Semantic">Semantic HTML</h2>
+        <p><strong>Semantic meaning related to meaning. By using Semantic HTML, we select HTML elements based on their meanin, not on how they are presented. Providing context as to what information is inside the opening and closing tag.</strong></p>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Header</td>
+                    <td>Container usually for either the navigational links or intro content containing h1-6 headings.</td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Navigation</td>
+                    <td>Used to define a block of navigation links. Such as menus and table of contents.</td>
+                </tr>
+                <tr>
+                    <td>&lt;main&gt;</td>
+                    <td>Main</td>
+                    <td>Encapsulates the dominant content within a webpage.</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Footer</td>
+                    <td>Content at the bottom containing subject information. Such as contact, copyright, terms of use, etc.</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Section</td>
+                    <td>Defines elements in a document. Such as chapters, headings, or any other area of the document with the same theme.</td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>Article</td>
+                    <td>Content such as articles, blogs, comments, magazines, etc. Helps someone with a screen reader know where the article begins and ends.</td>
+                </tr>
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>Aside</td>
+                    <td>Used to mark additinal information that can enhance another element but isn't required in order to understand the main content. Such as bibliographies, endnotes, comments, etc.</td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Figure</td>
+                    <td>Encapsulates media such as an image, illustration, diagram, etc.</td>
+                </tr>
+                <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>Figure Caption</td>
+                    <td>Goes inside the "figure". Used to describe the media in the figure.</td>
+                </tr>
+                <tr>
+                    <td>&lt;audio&gt;</td>
+                    <td>Audio</td>
+                    <td>Used to embed audio content into a document. Uses the "source" tag.</td>
+                </tr>
+                <tr>
+                    <td>&lt;source&gt;</td>
+                    <td>Source</td>
+                    <td>Encapsulates the audio link. Used in conjuction with "src" and "type".</td>
+                </tr>
+                <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>Video</td>
+                    <td>Makes it clear that the developer is attempting to display a video.</td>
+                </tr>
+                <tr>
+                    <td>&lt;embed&gt;</td>
+                    <td>Embed</td>
+                    <td>Embeds media content into a page from an external source. Depreciated/Legacy and normally not used.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<br>
+    
+    <h1>CSS Styling</h1>
+
+    <div>
+        <h2 id="Code">Starting a New Visual Studio Project</h2>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Boiler plate</td>
+                    <td></td>
+                    <td>Starter code for web browser. Type 'html' and select the 'html:5' option.</td>
+                </tr>
+                <tr>
+                    <td>Command /</td>
+                    <td></td>
+                    <td>Comments out a line</td>
+                </tr>
+                <tr>
+                    <td>Tab elements</td>
+                    <td></td>
+                    <td>Typing in a element and pressing tab will fill out the needed elements.</td>
+                </tr>
+                <tr>
+                    <td>New Project</td>
+                    <td></td>
+                    <td><ol>
+                        <li>create index.html</li>
+                        <li>create folder 'resources'</li>
+                        <ol>
+                            <li>Inside 'resources' create folder 'css'</li>
+                            <ol>
+                                <li>Inside 'css' create file 'index.css'</li>
+                            </ol>
+                            <li>Inside 'resources' create folder 'images'</li>
+                        </ol>
+                        <li>Link 'index.css'</li>
+                    </ol></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<br>
+
+    <div>
+        <h2 id="Ruleset">CSS Ruleset</h2> 
+        <p><strong>Applies styling to websites. </strong></p>
+        <br>
+        <p><strong>Code Example:<br> 
+            p{ <br>
+            color:blue; <br>
+            }</strong></p>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>Link</td>
+                    <td>Links HTML to CSS. Needs the "rel" and "href" attribute. Placed within the head of the HTML file. <strong>Self Closing.</strong></td>
+                </tr
+                <tr>
+                    <td>Selector</td>
+                    <td>p, h1, etc.</td>
+                    <td>The beginning of the ruleset used to target the element that will be styled.</td>
+                </tr>
+                <tr>
+                    <td>Declaration Block</td>
+                    <td></td>
+                    <td>The code in-between and including the curly braces {} that contains the CSS declaration</td>
+                </tr>
+                <tr>
+                    <td>Declaration</td>
+                    <td></td>
+                    <td>The group name for a property and value pair that applies a style to the selected element. Ex. color:blue;</td>
+                </tr>
+                <tr>
+                    <td>Property</td>
+                    <td></td>
+                    <td>Signifies what visual characteristics of the element is to be modified. Ex. color.</td>
+                </tr>
+                <tr>
+                    <td>Value</td>
+                    <td></td>
+                    <td>Signifies the value of the property. Ex. blue.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<br>
+
+    <div>
+        <h2 id="Selector">Selectors</h2>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>*</td>
+                    <td>Universal Selector</td>
+                    <td>Used to modify all elements</td>
+                </tr>
+                <tr>
+                    <td>.</td>
+                    <td>Class Selector</td>
+                    <td>Used to select onr or more elements for CSS styling</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>id selector</td>
+                    <td>Used if something needs to be styled uniquely. Single value and once per page.</td>
+                </tr>
+                <tr>
+                    <td>[ ]</td>
+                    <td>Attribute Selector</td>
+                    <td>Looks for img containing " " and sets css rules for it.</td>
+                </tr>
+                <tr>
+                    <td>Pseudo-class(:)</td>
+                    <td>:focus<br> :visited <br>:disabled <br>:active</td>
+                    <td>When you click on a element and a blue boarder is added showing that it is in focus. <br>
+                        When you click on a blue &lt;a&gt; link to visit another page, but when return link is purple. <br>
+                        Filling out a form and submit is disabled until all fields are completed. <br>
+                        Select and style the active link. Active once clicked on.</td>
+                </tr>
+                <tr>
+                    <td>element.class</td>
+                    <td>Chaining</td>
+                    <td>Require an HTML element to have two or more CSS selectors at the same time.</td>
+                </tr>
+                <tr>
+                    <td>.selector element</td>
+                    <td>Descendant Combinator</td>
+                    <td>Selecting elements that are nested within other HTML elements.</td>
+                </tr>
+                <tr>
+                    <td>element, class</td>
+                    <td>Multiple Selectors</td>
+                    <td>Style multiple selectors at once.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<br>
+
+    <div>
+        <h2 id="Styling">Visual Styling Rules</h2>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>font-family:</td>
+                    <td></td>
+                    <td>To change the typeface of text on your webpage. <strong>Use ' ' for multi worded fonts.</strong></td>
+                </tr>
+                <tr>
+                    <td>Font Stacking</td>
+                    <td>font-family: Caslon, 'Times New Roman', serif</td>
+                    <td>If Caslon doesn't work then try TNR. If TNR doesn't work then use a serif font on the system.</td>
+                </tr>
+                <tr>
+                    <td>Serif</td>
+                    <td></td>
+                    <td>Have extra details on the end of the letters</td>
+                </tr>
+                <tr>
+                    <td>Sans Serif</td>
+                    <td></td>
+                    <td>No details at the end of the letter</td>
+                </tr>
+                <tr>
+                    <td>font-size:</td>
+                    <td></td>
+                    <td>Changes the px(pixel) size.</td>
+                </tr>
+                <tr>
+                    <td>font-weight:</td>
+                    <td>bold; 
+                        <br>normal;
+                        <br>lighter;
+                        <br>bolder;
+                    </td>
+                    <td>How bold or thin text appears.</td>
+                </tr>
+                <tr>
+                    <td>Numerical Bold</td>
+                    <td>1-1000</td>
+                    <td>Used in increments of 100. 400(normal) and 700(bold).</td>
+                </tr>
+                <tr>
+                    <td>font-style: </td>
+                    <td>italic;</td>
+                    <td>Text to appear in italics</td>
+                </tr>
+                <tr>
+                    <td>text-transform: </td>
+                    <td>uppercase; lowercase;</td>
+                    <td>All text to either lower or uppercase.</td>
+                </tr>
+                <tr>
+                    <td>text-align:</td>
+                    <td>left; <br>center; <br> right; <br>justify;</td>
+                    <td>Aligns text to the element that holds it, its parent.</td>
+                </tr>
+                <tr>
+                    <td>letter-spacing: </td>
+                    <td></td>
+                    <td>Used to set the horizontal spacing between the individual characters in a element. In px or em.</td>
+                </tr>
+                <tr>
+                    <td>word-spacing: </td>
+                    <td></td>
+                    <td>Set space between words. In px or em(preferred).</td>
+                </tr>
+                <tr>
+                    <td>line-height: </td>
+                    <td></td>
+                    <td>Set how tall we want each line containing our text to be. In px, %, and em.</td>
+                </tr>
+                <tr>
+                    <td>color:</td>
+                    <td></td>
+                    <td>Styles elements foreground color, text.</td>
+                </tr>
+                <tr>
+                    <td>background-color:</td>
+                    <td></td>
+                    <td>Stlyes elements background color.</td>
+                </tr>
+                <tr>
+                    <td>opacity:</td>
+                    <td></td>
+                    <td>How transparent an element is 0, invisible, to 1.</td>
+                </tr>
+                <tr>
+                    <td>background-image:</td>
+                    <td>url(" ");</td>
+                    <td>Can be relative file within your project or a link.</td>
+                </tr>
+                <tr>
+                    <td>!important:</td>
+                    <td></td>
+                    <td>Overwrites any style no matter what. Should rarely be used.</td>
+                </tr>
+                <tr>
+                    <td>height:</td>
+                    <td>px;</td>
+                    <td>Sets the height of the element.</td>
+                </tr>
+                <tr>
+                    <td>text-decoration: </td>
+                    <td>underline;</td>
+                    <td>Will underline the text. Useful for links or things to stand out as clickable.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<br>
+
+    <div>
+        <h2 id="Web-Fonts">Web Fonts</h2>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Google Fonts</td>
+                    <td></td>
+                    <td>When selecting your font you'll be shown different styles. Selecting your stlyes will give you a &lt;link&gt;.
+                        Add the &lt;link&gt; to HTML
+                    </td>
+                </tr>
+                <tr>
+                    <td>@font-face{}</td>
+                    <td>@fontface{
+                        <br>font-family: 'MyParagraphFont';
+                        <br>src:url('_.woff2') format('woff2'),
+                        <br>url('_.woff') format('woff'),
+                        <br>url('_.ttf') format('truetype'),}
+                    </td>
+                    <td>WOFF2 being the most progressive but good to inclue TTF, WIFF, WOFF2 with your @font-face. 
+                       <br> Font-family is used to assign the font a name.
+                       <br>src contains the relative path and its format. 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<br>
+
+    <div>
+        <h2 id="Colors">Color Formating</h2>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hexadecimal-color: </td>
+                    <td>#000000</td>
+                    <td>Colors specified using the hexadecimal/hex colors. Begins with '#' followed by 3 or 6 characters.
+                        <strong>16 digits (0-15) where A-F=(10-15).</strong> Characters represent mixture of red, blue, and green.
+                    </td>
+                </tr>
+                <tr>
+                    <td>RGB Colors</td>
+                    <td>color: rgb(23, 45, 23);</td>
+                    <td>Uses decimal numers rather than hexadecimal numbers. 0-255</td>
+                </tr>
+                <tr>
+                    <td>Hue, Saturation, and Lightness (HSL)</td>
+                    <td>color: hsl(120, 60%, 10%)</td>
+                    <td>First numer represents the degree of the Hue. Second percent saturation. Third percent lightness.</td>
+                </tr>
+                <tr>
+                    <td>Opacity and Alpha (HSLA) and RGBA</td>
+                    <td>color: hsla(34, 100%, 50%, 0.1);</td>
+                    <td>When colors overlap changing the opacity, transparency, so the bottom will show. Fourth number called the 
+                        Alpha/opacity. 0(transparent)-1(opaque). Any color below 1, the color behind it will be blended in.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<br>
+
+    <div>
+        <h2 id="Box">The Box Model</h2>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Resetting Defaults</td>
+                    <td>*{
+                        <br>margin: 0;
+                        <br>padding: 0;}
+                    </td>
+                    <td>
+                        All major web brwosers have a default stylesheet they use in absence of an external stylesheet.
+                        <br>Dev. reset so they can work with a clean slate.
+                    </td>
+                </tr>
+                <tr>
+                    <td>border:</td>
+                    <td><br>width 
+                        <br>style 
+                        <br>color</td>
+                    <td>A line that surrounds an element, like a frame around a picture.
+                        <br>The thickness of the border. Set in pixels or keywords: thin, medium, thick.
+                        <br>The design of the border: none, dotted, solid, hidden, dashed, double, etc.
+                        <br>140 built in color keywords
+                    </td>
+                </tr>
+                <tr>
+                    <td>border-radius:</td>
+                    <td></td>
+                    <td>modify the corners of a element's border box. Can make a circle by first setting width/height 
+                        as the same and border-radius: 50%;.
+                    </td>
+                </tr>
+                <tr>
+                    <td>padding- :</td>
+                    <td>
+                        <br>padding-left: 
+                        <br>padding-right:
+                        <br>padding-bottom:
+                        <br>padding-top:
+                    </td>
+                    <td>Space between the contents and borders. Used to expand background color and appear less crowded.
+                        <br><br>
+                        Set by pixels the amount of space in padding to add.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Padding/Margin Shorthand</td>
+                    <td>
+                        6px 11px 4px 9px;
+                        <br>5px 10px 20px;
+                        <br>5px 10px;
+                    </td>
+                    <td>
+                        top right bottom left
+                        <br>top left right
+                        <br>top/bottom left/right
+                    </td>
+                </tr>
+                <tr>
+                    <td>margin- :</td>
+                    <td>
+                        <br>margin-left: 
+                        <br>margin-right:
+                        <br>margin-bottom:
+                        <br>margin-top:
+                    </td>
+                    <td>Space outside the box/border.
+                        <br><br>
+                        Set by pixels the amount of space in padding to add.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Auto</td>
+                    <td>Ex. code: <br>
+                        width: 400px;<br>
+                        margin: 0 auto;
+                        </td>
+                    <td>Centers content. <strong>Must have a width set.</strong><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Margin Collapse</td>
+                    <td></td>
+                    <td>Horizontal Margins add. 
+                        <br>Vertical Margins do not.
+                    </td>
+                </tr>
+                <tr>
+                    <td>min-width: 
+                        <br>max-width:
+                    </td>
+                    <td>Minimum width
+                        <br>Maximum width
+                    </td>
+                    <td>Ensures a minimum width of an elements box.
+                        <br>Ensures a maximum width.
+                        <br>Some content, like text, can become difficult to read when a browser window is narrowed or expanded.
+                    </td>
+                </tr>
+                <tr>
+                    <td>min-height: 
+                        <br>max-height:
+                    </td>
+                    <td>Minimum height
+                        <br>Maximum height
+                    </td>
+                    <td>Ensures a minimum height of an elements box.
+                        <br>Ensures a maximum height.
+                        <br>Some content, like text, can become difficult to read when a browser window is narrowed or expanded.
+                    </td>
+                </tr>
+                <tr>
+                    <td>overflow: ;</td>
+                    <td>
+                        <br>hidden;
+                        <br>scroll;
+                        <br>visible;
+                        <br>
+                    </td>
+                    <td>Controls what happens to content that spills, or overflows, outside its box.
+                        <br>will be hidden from view.
+                        <br>a scrollbar will appear
+                        <br>is default. Content wil be displayed outside of element.
+                        <br><strong>Set on parent element to instruct web browser on how to render a child.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>visibility: </td>
+                    <td>
+                        hidden;
+                        <br>visible;
+                        <br>collapse;
+                    </td>
+                    <td>
+                        Hidden from view. Space will stillbe there just hidden info.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<br>
+
+    <div>
+        <h2 id="Content-Box">Box Model: Content-Box;</h2>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Default Box Value</td>
+                    <td>*{
+                        <br>box-sizing: border-box;}</td>
+                    <td>Resets the box model to border-box for all HTML elements. Avoids the dimensional issues.
+                        <br><strong>Superior allows child box to fit inside parent.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>The box model in DevTools</td>
+                    <td>command+option+i
+                        <br>right click, inspect
+                    </td>
+                    <td>In devTools bottom half 'Computed'
+                        <br>Can change but will not save.
+                        <br>Top half, left corner, arrow can highlight
+                    </td>
+                </tr>
+                <tr>
+                    <td>Box of all elements relative to each other?</td>
+                    <td></td>
+                    <td>In the 'Styles' tab. Select HTML in !DOCTYPE
+                        <br>'+' for new rule. Replace html with '*'
+                        <br>{border: 1px solid red !important}
+                    </td>
+                </tr>
+                <tr>
+                    <td>HTML Box Size</td>
+                    <td>width + height
+                        <br>width
+                        <br>height
+                    </td>
+                    <td>HTML box is found by sum of width and height.
+                        <br> sum of 'content width' + 'padding left and right' + 'border left and right'
+                        <br>sum of 'content height' + 'padding top and bottom' + 'border top and bottom'
+                        <br><strong>Margin has no impact. Since margin just affects how near or far others are.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Meyer Web Reset</td>
+                    <td>https://meyerweb.com/eric/tools/css/reset/</td>
+                    <td>Place in reset stylesheet.</td>
+                </tr>
+                <tr>
+                    <td>position: </td>
+                    <td></td>
+                    <td>Changing the default position of an element: (defaul)static; relative; absolute; fixed; sticky;</td>
+                </tr>
+                <tr>
+                    <td>position: relative;</td>
+                    <td><br>
+                        top: px;
+                        <br>bottom: px;
+                        <br>left: px;
+                        <br>right: px;
+                    </td>
+                    <td>Place element relative to it's default static position. Can specify in px, ems, or %.
+                        <br>moves element down from top.
+                        <br>moves element up from bottom.
+                        <br>moves element right from left side.
+                        <br>moves element left from right side.
+                    </td>
+                </tr>
+                <tr>
+                    <td>position: absolute;</td>
+                    <td></td>
+                    <td>All other elements on the page will ignore the element and act like its not present on the page. 
+                        Scrolls with the rest of the document.</td>
+                </tr>
+                <tr>
+                    <td>position: fixed;</td>
+                    <td></td>
+                    <td>Fixes an element to a spot, regardless of scrolling. <strong>Set 'width:100%;' to fix small box.</strong></td>
+                </tr>
+                <tr>
+                    <td>position: sticky;</td>
+                    <td></td>
+                    <td>Sticks an element to a spot, but sticks to a specified position.
+                        <strong>Will scroll with you until end of parent element then unsticks and rejoins the flow of the document.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>z-index: </td>
+                    <td>0-1;</td>
+                    <td>Controls how far back/forward an element should appear on the webpage when elements overlap.
+                         <strong>Accepts integers values 0-1(front). Doesn't work on static elements, so set to relative.</strong></td>
+                </tr>
+                <tr>
+                    <td>display: </td>
+                    <td>Inline Dispay
+                        <br>inline;
+                        <br>block;
+                        <br>inline-block;
+                    </td>
+                    <td>Dictates if it can share horizontal space with other elements.
+                        <br>&lt;em&gt;, &lt;strong&gt;, &lt;a&gt;. Height and width cannot be specified.
+                        <br>Not displayed in the same line as the content around them. Fill the entire width of the page but can be modified.
+                        &lt;h1&gt; - &lt;h6&gt;, &lt;p&gt;, &lt;div&gt;, &lt;footer&gt;
+                        <br>Can appear next to each other and can specify their width and height.
+                    </td>
+                </tr>
+                <tr>
+                    <td>float: </td>
+                    <td>
+                        left;
+                        <br>right;
+                    </td>
+                    <td>Used for wrapping text around an image.
+                        <strong>must have width specified otherwise the element will assume the full width of its containing element.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>clear: </td>
+                    <td>Definition
+                        <br>left;
+                        <br>right;
+                        <br>both;
+                        <br>none;
+                    </td>
+                    <td>How elements should behave if they bump into each other. <strong>If float is used on multi elements of different sizes</strong>
+                        <br>Left = left sides wont touch
+                        <br>Right = right sides wont touch
+                        <br>Both = neither sides will touch
+                        <br>none = can touch either side
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<br>
+
+    <div>
+        <h2 id="Command">Command Line</h2>
+        <table>
+            <thead scope="col">
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ls</td>
+                    <td>List</td>
+                    <td>List all files and directories inside current directory</td>
+                </tr>
+                <tr>
+                    <td>pwd</td>
+                    <td>Print working directory</td>
+                    <td>Outputs the name of the directory you are currently in</td>
+                </tr>
+                <tr>
+                    <td>cd</td>
+                    <td>change directory</td>
+                    <td>switches to the directory you specify</td>
+                </tr>
+                <tr>
+                    <td>cd..</td>
+                    <td></td>
+                    <td>Changes the directroy up. Goes back.</td>
+                </tr>
+                <tr>
+                    <td>cd/</td>
+                    <td></td>
+                    <td>Can directly go to a file. Ex. cd home/course/work</td>
+                </tr>
+                <tr>
+                    <td>cd ../..</td>
+                    <td></td>
+                    <td>Go back 2 directories</td>
+                </tr>
+                <tr>
+                    <td>mkdir</td>
+                    <td>make directory</td>
+                    <td>Creates a directory. Can also combo with /. Ex. mkdir media/__</td>
+                </tr>
+                <tr>
+                    <td>touch</td>
+                    <td></td>
+                    <td>Creates a file</td>
+                </tr>
+                <tr>
+                    <td>tab</td>
+                    <td></td>
+                    <td>autocompletes your command</td>
+                </tr>
+                <tr>
+                    <td>Up and down</td>
+                    <td></td>
+                    <td>previous commands</td>
+                </tr>
+                <tr>
+                    <td>clear</td>
+                    <td></td>
+                    <td>Clears the terminal</td>
+                </tr>
+                <tr>
+                    <td>echo "Hi" >> "Greetings".txt</td>
+                    <td></td>
+                    <td>Creates a .txt file named 'Greetings' and types 'Hi' into it. </td>
+                </tr>
+                <tr>
+                    <td>cat "Greetings".txt</td>
+                    <td></td>
+                    <td>Prints the contents</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+
+<tr>
+    <td>&lt;&gt;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</html>
